@@ -1,0 +1,14 @@
+body {
+	background: #002633;
+	font-size: 20px;
+}
+
+#begin_page {
+	margin: 5px;
+	padding: 5px;
+}
+
+#end_page {
+	margin: 5px;
+	padding: 5px;
+}

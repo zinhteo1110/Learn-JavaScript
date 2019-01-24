@@ -83,6 +83,22 @@ function split10(Array_Odds,Array_Evens,each_pair){
 
 // }
 
+/*
+lập trình cho phép phân tách 2 dãy số chắn và lẽ phục vụ cho việc in ebooks 2 mặt 
+		1. Nhập vào số trang tổng. Ví dụ: 532 trang.
+		2. Vậy có 2 dãy số lẻ và chẵn như sau: 
+			1,3,5,7,9....531
+			2,4,6,8,10...532
+		3. Nhập số cần phân tách của từng dãy số. Ví dụ nếu nhập vào 10 thì dãy số lẻ sẽ phân tách như sau:
+			1,3,5,7,9,11,13,15,17,19  ( gồm 10 số - tương ứng 10 trang)
+			2,4,6,8,10,12,14,16,18,20  (tương tự 10 cho 10 số chẵn)
+
+			Tiến trình này lặp cho tới khi tiến tới trang cuối cùng. [532]
+
+		4. Kết thúc xuất ra được file để copy paste cho việc in.	
+		5. Mở rộng có thể lập trình in trực tiếp.
+*/  
+
 ////////////////////////////////////////////////////////////////////////////////////////
 // Muc tieu trang HTML view dc button trang thai cua tung dong : Printting | Printted.//
 // Nhap vao so trang bat dau va trang ket thuc.										  //
