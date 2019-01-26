@@ -6,7 +6,7 @@ function List() {
 	this.dataStore = [];
 	this.clear = clear;
 	this.find = find;
-	this.toString = to String;
+	this.toString = toString;
 	this.insert = insert;
 	this.append = append;
 	this.remove = remove;
@@ -95,7 +95,7 @@ function front() {
 }
 
 function end() {
-	this.pos = listSize-1;
+	this.pos = this.listSize-1;
 }
 
 function prev() {
@@ -106,7 +106,7 @@ function prev() {
 
 function next() {
 	if (this.pos < this.listSize-1) {
-		--this.pos;
+		++this.pos;
 	}
 }
 
@@ -122,9 +122,33 @@ function getElement() {
 	return this.dataStore[this.pos];
 }
 
+//	Iterating Through a List
+var names = new List();
+	names.append("Clayton");
+	names.append("Raymond");
+	names.append("Cynthia");
+	names.append("Jennifer");
+	names.append("Bryan");
+	names.append("Danny");
 
+// names.front();
+// console.log(names.getElement());
 
+// names.next();
+// console.log(names.getElement());
 
+// names.next();
+// names.next();
+// names.prev();
+// console.log(names.getElement());
+
+for(names.front(); names.currPos() < names.length(); names.next()) {
+	console.log(names.getElement());
+}
+
+// for (names.end(); names.currPos >= 0; names.prev()) {
+// 	console.log(names.getElement);
+// }
 
 
 
