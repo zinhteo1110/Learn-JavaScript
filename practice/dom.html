@@ -2,14 +2,28 @@
 <html>
 <head>
 	<title>DOM EventListener</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<meta charset="UTF-8">
 </head>
 <body>
 	<h2>Javascript addEventListener()</h2>
 
 	<p>This example uses the addEventListener() method to attach a click event to a button.</p>
+	<p>This example uses the addEvnetListener() method to add two click events to the same button</p>
 
-	<button id="myBtn1">Try It</button>
+	<div id="myDiv1">
+		<h2>bubbling:</h2>
+		<p id="myP1">Click me!</p>
+	</div><br>
+
+	<div id="myDiv2">
+		<h2>Capturing:</h2>
+		<p id="myP2">Click me!</p>
+	</div>
+
+	<button id="myBtn1">Get Date</button>
+	<button id="myBtn2">Try It</button>
+	<button id="myBtn3">Test Two Click Events</button>
 
 	<p id="demo1"></p>
 

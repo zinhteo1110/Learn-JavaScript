@@ -12,3 +12,15 @@ body {
 	margin: 5px;
 	padding: 5px;
 }
+
+#myDiv1, #myDiv2 {
+	background-color: coral;
+	padding: 50px;
+}
+
+#myP1, #myP2 {
+	background-color: white;
+	font-size: 20px;
+	border: 1px solid;
+	padding: 20px;
+}
