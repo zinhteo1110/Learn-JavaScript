@@ -130,29 +130,44 @@ var names = new List();
 	names.append("Jennifer");
 	names.append("Bryan");
 	names.append("Danny");
+	names.append("BigBang");
 
-// names.front();
+// var A = names.front();
+// var B = names.currPos();
+// var C = names.length();
+// var D = names.next();
+// var E = names.getElement();
 // console.log(names.getElement());
 
 // names.next();
 // console.log(names.getElement());
 
-// names.next();
-// names.next();
+ // names.next();
+ // names.next();
+ // names.next();
+// console.log(names.currPos());
 // names.prev();
 // console.log(names.getElement());
 
-for(names.front(); names.currPos() < names.length(); names.next()) {
-	console.log(names.getElement());
-}
+// var A = names.length();
+// console.log(names.listSize);
+// console.log(names.dataStore);
+// console.log(A);
 
-// for (names.end(); names.currPos >= 0; names.prev()) {
+// for(names.front(); names.currPos() < names.length(); names.next()) {
+// 	console.log(names.getElement());
+// }
+
+// for (names.end(); names.currPos() >= 0; names.prev()) {
 // 	console.log(names.getElement);
 // }
 
+//names.clear();
+// for(A; B < C; D) {
+// 	console.log(E);
+// }
 
-
-
+console.log(names.front);
 
 
 
