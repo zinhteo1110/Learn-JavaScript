@@ -30,7 +30,7 @@ function append(element) {
 //	First, we have to find the element in the list, and then we have to remove it
 //	Find: Finding an Element in a List
 function find(element) {
-	for(var i = 0; i < this.dataStore.length; i++) {
+	for(var i = 0; i < this.dataStore.length; ++i) {
 		if(this.dataStore[i] == element){
 			return i;
 		}
@@ -44,7 +44,7 @@ function remove(element) {
 	if (foundAt > -1) {
 		this.dataStore.splice(foundAt,1);
 		--this.listSize;
-		return true
+		return true;
 	}
 	return false;
 }
@@ -124,12 +124,26 @@ function getElement() {
 
 //	Iterating Through a List
 var names = new List();
+
 	names.append("Clayton");
 	names.append("Raymond");
 	names.append("Cynthia");
 	names.append("Jennifer");
 	names.append("Bryan");
 	names.append("Danny");
+<<<<<<< HEAD
+	names.append("Robe");
+
+// names.front();
+// names.moveTo(3);
+// console.log(names.getElement());
+
+// console.log(names.listSize);
+// console.log(typeof names.listSize);
+// names.front();
+// console.log(names.getElement());
+
+=======
 	names.append("BigBang");
 
 // var A = names.front();
@@ -170,15 +184,40 @@ var names = new List();
 console.log(names.
 	front);
 
+>>>>>>> 5c9ef28f6b80175c8d248787cc38d1719d437813
+
+//names.currPos();
+
+console.log("Vi tri front: "+names.front());
+console.log("Vi tri next: "+names.next());
+console.log("Vi tri currPos: "+names.currPos());
+console.log(names.getElement());
+
+// for(names.front(); names.currPos() <= names.end(); names.next()) {
+// 	// document.write("<br>"+names.getElement());
+// 	console.log(names.getElement());
+// }
 
 
+// for(var i =0; i < names.listSize; i++) {
+// 	console.log(names.dataStore[i]);
+// }
 
+// var movies = read(films.txt).split("\n");
 
+// function createArr(file) {
+// 	var arr = read(file).split("\n");");
 
+// 	for (var i = 0; i < arr.length; ++i) {
+// 		arr[i] = arr[i].trim();
+// 	}
+// 	return arr;
+// }
 
-
-
-
+// var movieList = new List();
+// for (var i = 0; i < movies.length; ++i) {
+// 	movieList.append(movies[i]);
+// }
 
 
 
