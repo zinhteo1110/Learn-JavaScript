@@ -167,7 +167,8 @@ var names = new List();
 // 	console.log(E);
 // }
 
-console.log(names.front);
+console.log(names.
+	front);
 
 
 

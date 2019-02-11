@@ -1,7 +1,8 @@
 var dayso = [];
-var begin_page = 107;
-var end_page = 429; 
-var total_pages = end_page - begin_page;
+var dayso2 = [];
+var begin_page = 542;
+var end_page = 686; 
+var total_pages = parseInt(end_page - begin_page);
 var pair_pages = parseInt(total_pages/10);
 var each_pair = parseInt(pair_pages/2);
 
@@ -9,6 +10,11 @@ for(var i = 0; i < total_pages; i++)
 {
 	dayso[i] = begin_page + i;
 }
+
+for(var i = 0; i <= total_pages + 1; i++ ){
+	dayso2[i] = i + begin_page;
+}
+
 //document.write("<br> So luong trang: "+(end_page - begin_page));
 document.write("<br> So luong trang: "+dayso.length);
 document.write("<br> So luong cac day so le & day so chan can de in la: "+pair_pages);
@@ -28,13 +34,13 @@ var Odds = dayso.filter(isOdds);
 // console.log(Odds);
 // console.log(Evens);
 
-// document.write("<br>"+Odds);
-// document.write("<br>"+Evens);
+document.write("<br>"+Odds);
+document.write("<br>"+Evens);
 
 // var O1 = Odds.splice(0,10);
 // var E1 = Evens.splice(0,10);
 
-split10(Odds,Evens,each_pair);
+//split10(Odds,Evens,each_pair);
 
 // xay dung ham cat 10 phan tu dau tien cua mang
 /*
@@ -48,7 +54,7 @@ function split10_Odd(nums,each_pair){
 	}
 }
  ==> HAM TREN OK.
-*/
+
 
 function split10(Array_Odds,Array_Evens,each_pair){
 	var nums_Odd = [];
@@ -63,6 +69,14 @@ function split10(Array_Odds,Array_Evens,each_pair){
 		i++;
 	}
 }
+*/
+
+// document.write("<br> dayso2 la: "+dayso2);
+// //begin = 261, end = 379
+// var Evens2 = [];
+// Evens2 = dayso2.filter(isEvens);
+// document.write("<br> TotalPages la: " +total_pages);
+// document.write("<br> day so le tu 381-->539 la: "+Evens2);
 
 // for(var i = 0; i < nums_Odd.length; i++){
 // 	document.write("<br>"+nums_Odd[i]);
