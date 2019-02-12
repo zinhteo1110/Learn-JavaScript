@@ -14,12 +14,27 @@
 		<input type="text" id="end_page" name="end_page" placeholder="Nhập vào số trang kết thúc"><br>
 		<button type="button" id="print">Page Output</button> -->
 		<!-- <script src="bootstrap4.0/js/bootstrap.min.js"></script> -->
-		<div id="test">
+		
+		<div>
 			<div>Noi dung cua file html</div>
-			<button class="btn" value="CLICK">click here</button>
+			<button class="btn" onclick="KetQua()" value="0" id="test">click here</button>
 		</div>
 
-		<script src="practice/flag.js"></script>	
+<script>
+		
+		function KetQua() {
+			var CountClick = document.getElementById('test');
+			
+			if (CountClick.value%2 == 0 ) 
+				alert ("first changed!");
+			else
+				alert ("second changed!");
+			CountClick.value++;
+			//console.log(CountClick.value);
+		}
+</script>		
+
+	<!-- 	<script src="practice/flag.js"></script> -->	
 		
 </body>
 </html>
