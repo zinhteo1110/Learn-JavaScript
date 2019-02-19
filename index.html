@@ -14,13 +14,13 @@
 		<input type="text" id="end_page" name="end_page" placeholder="Nhập vào số trang kết thúc"><br>
 		<button type="button" id="print">Page Output</button> -->
 		<!-- <script src="bootstrap4.0/js/bootstrap.min.js"></script> -->
-		
-		<div>
+<!-- TEST onclick Events == -->		
+		<!-- <div>
 			<div>Noi dung cua file html</div>
-			<button class="btn" onclick="KetQua()" value="0" id="test">click here</button>
-		</div>
+			<button type="submit" class="btn" onclick="KetQua()" value="0" id="test">click here</button>
+		</div> -->
 
-<script>
+<!-- <script>
 		
 		function KetQua() {
 			var CountClick = document.getElementById('test');
@@ -30,11 +30,18 @@
 			else
 				alert ("second changed!");
 			CountClick.value++;
-			//console.log(CountClick.value);
+			console.log(CountClick.value);
 		}
-</script>		
+</script> -->		
 
-	<!-- 	<script src="practice/flag.js"></script> -->	
+	<!--Phan biet method: click() va submit()-->
+	<form id="test" action="">
+		<input type="text" id="text" placeholder="Nhap vao noi dung: ">
+		<button type="button" id="getdata">Show Noi Dung</button>
+	</form> 
+		<button type="submit" id="changevalue">Change Noi Dung</button>
+
+	<script src="practice/clickandsubmit.js"></script>
 		
 </body>
 </html>
