@@ -1,7 +1,7 @@
 var dayso = [];
 var dayso2 = [];
-var begin_page = 542;
-var end_page = 686; 
+var begin_page = 635;
+var end_page = 656; 
 var total_pages = parseInt(end_page - begin_page);
 var pair_pages = parseInt(total_pages/10);
 var each_pair = parseInt(pair_pages/2);

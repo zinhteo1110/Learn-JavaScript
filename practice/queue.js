@@ -57,11 +57,44 @@ function Dancer(name, sex) {
 }
 
 function getDancers(males, famales) {
-	
+	var names = read("contact.txt").split("\n");
+	for (var i = 0; i < names.length; ++i) {
+		names[i] = names[i].trim();
+	}
+	for (var i = 0; i < names.length; ++i) {
+		var dancer = names[i].split(" ");
+		var sex = dancer[0];
+		var name = dancer[1];
+		if (sex == "F") {
+			females.enqueue(new Dancer(name, sex));
+		}
+		else {
+			males.enqueue(new Dancer(name, sex));
+		}
+	}
+}
+
+function dance(males, females) {
+	document.write("<br> The dance partners are: \n");
+	while(!females.empty() && !males.empty()) {
+		person = females.dequeue();
+		putstr("Female dancer is: " + person.name);
+		person = males.dequeue();
+		document.write("<br> and the male dancer is: " + person.name);
+	}
 }
 
 
-
+var maleDancers = new Queue();
+var femaleDancers = new Queue();
+getDancers(maleDancers, femaleDancers);
+dance(maleDancers, femaleDancers);
+if (!femaleDancers.empty()) {
+	document.write(femaleDancers.front().name + " is waitting to dance.");
+}
+if (!maleDancers.empty()) {
+	document.write(maleDancers.front().name + " is waitting to dance.");
+}
 
 
 
