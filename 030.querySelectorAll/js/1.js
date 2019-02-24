@@ -15,7 +15,7 @@ var b = document.querySelectorAll('.card-title');
 
 for (var i = 0; i < b.length; i++) {
 	 console.log(b);
-	 // console.log("Day la card-title thu"+i);
+	// console.log("Day la card-title thu"+i);
 	// b[i].innerHTML = "Day la Card title thu " + i;
 	// if(i==0) {
 	// 	b[i].innerHTML = "Day la Card Title thu 1";
