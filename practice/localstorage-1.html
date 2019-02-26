@@ -8,7 +8,7 @@
 </head>
 
 <body>
-	<div class="small-container">
+	<!-- <div class="small-container">
 		<h5>Test function LocalStorage</h5>
 
 		<form>
@@ -20,8 +20,27 @@
 
 		<button>Clear All</button>
 	</div>
+-->
+<!--==================================-->
+<pre>
+	localStorage and sessionStorage, part of the web storage API.
+</pre>
 
-	<script src="../js/localstorage-1.js"></script>
+<ul>
+	<li>The data is saved locally only and can’t be read by the server, which eliminates the security issue that cookies present.</li>
+	<li>It allows for much more data to be saved (10Mb for most browsers).</li>
+	<li>It’s simpler to use and the syntax is very straightforward.</li>
+</ul>	
+
+<ul>Storing Json object
+	<li> Only strings can be stored with localStorage or sessionStorage, but you can use JSON.stringify to store more complex objects and JSON.parse to read them:
+	</li>
+</ul>	
+
+<p id="test1"> Ket qua thu nghiem cho localStorage voi Object:</p>
+
+	<!--script src="../js/localstorage-1.js"></script> -->
+	<script src="../js/localstorage-2.js"></script>
 </body>
 
 </html>
