@@ -9416,18 +9416,18 @@ UA.prototype.loadConfig = function(configuration) {
       /* Host address
       * Value to be set in Via sent_by and host part of Contact FQDN
       */
-      //viaHost: SIP.Utils.createRandomToken(12) + '.invalid',
-      viaHost: SIP.Utils.createRandomToken(12) + '.SendoCall',
+      viaHost: SIP.Utils.createRandomToken(12) + '.invalid',
+      //viaHost: SIP.Utils.createRandomToken(12) + '.SendoCall',
 
       uri: new SIP.URI('sip', 'anonymous.' + SIP.Utils.createRandomToken(6), 'anonymous.invalid', null, null),
       wsServers: [{
         scheme: 'WSS',
-        //sip_uri: '<sip:edge.sip.onsip.com;transport=ws;lr>',
-        sip_uri: '<sip:freeswitch.ddns.net;transport=ws;lr',
+        sip_uri: '<sip:edge.sip.onsip.com;transport=ws;lr>',
+        //sip_uri: '<sip:freeswitch.ddns.net;transport=ws;lr',
         status: 0,
         weight: 0,
-        //ws_uri: 'wss://edge.sip.onsip.com'
-        ws_uri: 'wss://freeswitch.ddns.net:7443'
+        ws_uri: 'wss://edge.sip.onsip.com'
+        //ws_uri: 'wss://freeswitch.ddns.net:7443'
       }],
 
       // Password
