@@ -31,4 +31,5 @@ function displayWarning(msg) {
 		warningBox.parentNode.removeChild(warningBox);
 		warningTimeout = -1;
 	}, 2000);	//delay 2s
+	
 }
