@@ -19,30 +19,3 @@ var userAgent = new SIP.UA ({
 	password: '112233'
 });
 
-<<<<<<< HEAD
-userAgent.on('invite', function (zinhteo) {
-	session = zinhteo;
-	session.accept({
-		media: {
-			constraints: {
-				audio: true,
-				video: true
-			},
-			render: {
-				remote: document.getElementById('remoteVideo'),
-				local:  document.getElementById('localVideo')
-			}
-=======
-var options = {
-	media: {
-		constraints: {
-			audio: true,
-			video: true
-		},
-		render: {
-			remote: document.getElementById('remoteVideo'),
-			local: document.getElementById('localVideo')
->>>>>>> 16f14e8ca877ad012ac4dd57c52dfff0d6840238
-		}
-	}
-};
