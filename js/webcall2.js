@@ -19,7 +19,7 @@ userAgent.on('invite', function (zinhteo) {
 		media: {
 			constraints: {
 				audio: true,
-				video: true
+				video: false
 			},
 			render: {
 				remote: document.getElementById('remoteVideo'),

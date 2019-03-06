@@ -98,11 +98,8 @@ function inviteSubmit(e) {
 		}
 	});
 
-<<<<<<< HEAD
 	//mediaHandler.render(session);
 	//session.mediaHandler.renderHint.remote;
-=======
->>>>>>> 5a3bd4cee7ba60a6c1db72638ce833d687a9b66d
 
 	if (!uri) return;
 
@@ -212,7 +209,7 @@ console.log(ua);
 // end function createNewSessionUI
 
 */
-=======
+
 //   	// sessionUI.displayName.textContent = displayName || uri.user;
 //   	// elements.display.innerHTML = '<' + uri + '>';
 //   	// session.renderHint();
@@ -245,4 +242,4 @@ console.log(ua);
 // 	}
 // }
 // end function createNewSessionUI
->>>>>>> cfc12f77a1fe3ef957d8679898bc32ef0b66bc87
+
