@@ -6,3 +6,16 @@
 	font-size: 25px;
 	box-sizing: border-box;
 }
+
+.fa {
+	font-size: 50px;
+	cursor: pointer;
+	user-select: none;
+}
+
+.fa:hover {
+	color: darkblue;
+}
+
+.toggle.ios, .toggle-on.ios, .toggle-off.ios { border-radius: 20px; }
+.toggle.ios .toggle-handle { border-radius: 20px; }
