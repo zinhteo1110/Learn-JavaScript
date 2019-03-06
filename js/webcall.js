@@ -15,7 +15,6 @@ var config = {
 	uri: '',
 	wsServers: '',
 	userAgentString: 'SIP.js/0.7.0 BB',
-	//userAgentString: 'SIP.js/0.13.6',
 	traceSip: true,
 	register: false
 }
@@ -51,8 +50,19 @@ ua.on('unregistered', function () {
 
 // Accept an inbound (User Agent Server) Session
 ua.on('invite', function (session) {
-     //createNewSessionUI(session.remoteIdentity.uri, session);
-     session.accept();
+    session.accept({
+    	media: {
+    		constraints: {
+    			audio: true,
+    			video: false
+    		},
+    		render: {
+    			remote: document.getElementById('remoteVideo'),
+    			local:  document.getElementById('localVideo')
+    		}
+    	}
+    });
+
 });
 
 //tạo sự kiện nhấn để register hoặc unregister.
@@ -86,10 +96,9 @@ function inviteSubmit(e) {
 
 	var session = ua.invite(uri, {
 		media: {
-		//sessionDescriptionHandlerOptions: {	
 			constraints: {
 				audio: true,
-				video: true
+				video: false
 			},
 			render: {
 				remote: document.getElementById('remoteVideo'),
@@ -98,37 +107,10 @@ function inviteSubmit(e) {
 		}
 	});
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 8f20c14275913e07f8eba0561cce57aa75dd6147
-	//mediaHandler.render(session);
-	//session.mediaHandler.renderHint.remote;
-
 	if (!uri) return;
 
-	//console.log("====> thong tin options cho ham invite la: "+options);
-
-	//var session = ua.invite(uri, options);
-	
 	console.log("xxxxxxxxxxxxx> session: "+session.on);
-	//console.log("======> session.on:"+session.on);
-
-	// session.on('trackAdded', function() {
-	// 	var pc = session.sessionDesscriptionHandler.peerConnection;
-	// 	var remoteStream = new MediaStream();
-	// 	pc.getReceivers().forEach(function(receiver) {
-	// 		remoteStream.addTrack(receiver.track);
-	// 	});
-	// 	console.log(" =====> thong in cua pc: "+pc);	//The trackAdded event is simply a helper, and does not pass any information.
-	// 	session.mediaHandler.render(session.renderHint);
-	// 	console.log(session.mediaHandler.render);
-	// });
-
 	console.log("=====> thong tin session remote : "+session.remoteIdentity.uri);
-
-
-	//createNewSessionUI(uri, session);
 
 	// Click to end call
 	function endcallSubmit() {
@@ -160,91 +142,5 @@ elements.callbutton.addEventListener('click', inviteSubmit, false);
 console.log(ua);
 
 
-/*
 
-//==============function createNewSessionUI==============
-
-// function createNewSessionUI(uri, session) {
-// 	var sessionUI = {};
-
-// 	uri = session ? session.remoteIdentity.uri : SIP.Utils.normalizeTarget(uri, ua.configuration.hostport_params);
-//     var displayName = (session && session.remoteIdentity.displayName) || uri.user;
-
-//   	if (!uri) { return; }
-
-//   	sessionUI.session 			= session;
-//   	sessionUI.displayName		= elements.display;
-//   	sessionUI.renderHint        = {
-//     	remote: sessionUI.video
-//   	};
-  
-<<<<<<< HEAD
-  	// sessionUI.displayName.textContent = displayName || uri.user;
-  	// elements.display.innerHTML = '<' + uri + '>';
-  	// session.renderHint();
-
-  	var options = {
-      media: {
-        constraints: {
-          audio: true,
-        //video: video
-        }
-      }
-    };
-
-    if (!session) {
-      /* TODO - Invite new session */
-      /* Don't forget to enable buttons */
-/*
-      session = sessionUI.session = ua.invite(uri, options);
-
-      setUpListeners(session);
-    } else if (session.accept && !session.startTime) { // Incoming, not connected
-      session.accept(options);
-    }
-
-    function setUpListeners(session) {
-    	session.on('accepted', function () {
-    		elements.callbutton.disabled = true;
-    		session.mediaHandler.render(session.renderHint);
-    });
-  	
-	}
-}
-// end function createNewSessionUI
-
-*/
-
-//   	// sessionUI.displayName.textContent = displayName || uri.user;
-//   	// elements.display.innerHTML = '<' + uri + '>';
-//   	// session.renderHint();
-
-//   	var options = {
-//       media: {
-//         constraints: {
-//           audio: true,
-//         //video: video
-//         }
-//       }
-//     };
-
-//     if (!session) {
-//       /* TODO - Invite new session */
-//       /* Don't forget to enable buttons */
-//       session = sessionUI.session = ua.invite(uri, options);
-
-//       setUpListeners(session);
-//     } else if (session.accept && !session.startTime) { // Incoming, not connected
-//       session.accept(options);
-//     }
-
-//     function setUpListeners(session) {
-//     	session.on('accepted', function () {
-//     		elements.callbutton.disabled = true;
-//     		session.mediaHandler.render(session.renderHint);
-//     });
-  	
-// 	}
-// }
-// end function createNewSessionUI
 

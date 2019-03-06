@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/webcall.css">
 </head>
 <body>
-	<div id="container">
+
 		<!-- <div id="config">
 			<form id="config-form" action="">
 				<div id="dangnhap">
@@ -19,29 +19,36 @@
 			</form>
 		</div> -->
 
-		
+	<div id="container">	
+
 		<div id="area-1">
 			<button id="ua-regis" class="button">Register</button>
 			<p id="ua-status">status</p>
+			<label>SIP URI:<input type="text" id="ua-uri" class="input" placeholder="ex: haidn4@freeswitch.ddns.net"/></label>
 		</div>
-		<label>SIP URI:<input type="text" id="ua-uri" class="input" placeholder="ex: haidn4@freeswitch.ddns.net"/></label>
+
 		<div id="area-2"> 
 			<button id="startCall" class="button">Start Call</button>	
 			<button id="endCall" class="button">End Call</button>
-			<br>
-			<video id="remoteVideo"></video>
-			<br>
-			<video id="localVideo" muted="muted" width="128px" height="96px"></video>
 		</div>
-		<div>
-			<p id="displayname">Callee</p>
 
+		<div id="area-3">
+			<p id="displayname">Callee</p>
 			<p id="result">Result:</p>
 		</div>
+
+		<div id="area-4">
+			<video id="remoteVideo"></video>
+			<video id="localVideo" muted="muted"></video>
+		</div>
+
+		
+
 	</div><!--end div container -->
+
 	<script src="../js/sip-0.7.3.js"></script>
 	<!--script src="../js/sip-0.13.6.js"></script>-->
-	<script src="../js/call.js"></script>
+	<script src="../js/webcall.js"></script>
 	<!--script src="../js/https_redirect.js"></script>-->
 </body>
 </html>
