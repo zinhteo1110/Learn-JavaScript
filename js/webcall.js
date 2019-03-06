@@ -19,10 +19,10 @@ var config = {
 	register: false
 }
 
-config.authorizationUser = 'webcall';
+config.authorizationUser = 'webcall2';
 config.password = '112233';
-config.displayName = 'webcall';
-config.uri = 'webcall@freeswitch.ddns.net:5060';
+config.displayName = 'webcall2';
+config.uri = 'webcall2@freeswitch.ddns.net:5060';
 config.wsServers = 'wss://freeswitch.ddns.net:7443';
 
 var ua = new SIP.UA(config);
@@ -92,7 +92,7 @@ function inviteSubmit(e) {
 		}
 	});
 
-	mediaHandler.render(session);
+	//mediaHandler.render(session);
 	//session.mediaHandler.renderHint.remote;
 
 	if (!uri) return;
@@ -139,49 +139,49 @@ console.log(ua);
 
 //==============function createNewSessionUI==============
 
-function createNewSessionUI(uri, session) {
-	var sessionUI = {};
+// function createNewSessionUI(uri, session) {
+// 	var sessionUI = {};
 
-	uri = session ? session.remoteIdentity.uri : SIP.Utils.normalizeTarget(uri, ua.configuration.hostport_params);
-    var displayName = (session && session.remoteIdentity.displayName) || uri.user;
+// 	uri = session ? session.remoteIdentity.uri : SIP.Utils.normalizeTarget(uri, ua.configuration.hostport_params);
+//     var displayName = (session && session.remoteIdentity.displayName) || uri.user;
 
-  	if (!uri) { return; }
+//   	if (!uri) { return; }
 
-  	sessionUI.session 			= session;
-  	sessionUI.displayName		= elements.display;
-  	sessionUI.renderHint        = {
-    	remote: sessionUI.video
-  	};
+//   	sessionUI.session 			= session;
+//   	sessionUI.displayName		= elements.display;
+//   	sessionUI.renderHint        = {
+//     	remote: sessionUI.video
+//   	};
   
-  	// sessionUI.displayName.textContent = displayName || uri.user;
-  	// elements.display.innerHTML = '<' + uri + '>';
-  	// session.renderHint();
+//   	// sessionUI.displayName.textContent = displayName || uri.user;
+//   	// elements.display.innerHTML = '<' + uri + '>';
+//   	// session.renderHint();
 
-  	var options = {
-      media: {
-        constraints: {
-          audio: true,
-        //video: video
-        }
-      }
-    };
+//   	var options = {
+//       media: {
+//         constraints: {
+//           audio: true,
+//         //video: video
+//         }
+//       }
+//     };
 
-    if (!session) {
-      /* TODO - Invite new session */
-      /* Don't forget to enable buttons */
-      session = sessionUI.session = ua.invite(uri, options);
+//     if (!session) {
+//       /* TODO - Invite new session */
+//       /* Don't forget to enable buttons */
+//       session = sessionUI.session = ua.invite(uri, options);
 
-      setUpListeners(session);
-    } else if (session.accept && !session.startTime) { // Incoming, not connected
-      session.accept(options);
-    }
+//       setUpListeners(session);
+//     } else if (session.accept && !session.startTime) { // Incoming, not connected
+//       session.accept(options);
+//     }
 
-    function setUpListeners(session) {
-    	session.on('accepted', function () {
-    		elements.callbutton.disabled = true;
-    		session.mediaHandler.render(session.renderHint);
-    });
+//     function setUpListeners(session) {
+//     	session.on('accepted', function () {
+//     		elements.callbutton.disabled = true;
+//     		session.mediaHandler.render(session.renderHint);
+//     });
   	
-	}
-}
+// 	}
+// }
 // end function createNewSessionUI
