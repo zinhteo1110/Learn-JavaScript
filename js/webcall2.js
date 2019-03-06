@@ -7,9 +7,9 @@ endButton.addEventListener("click", function () {
 }, false);
 
 var userAgent = new SIP.UA({
-	uri: 'webcall1@freeswitch.ddns.net:5060',
+	uri: 'webcall2@freeswitch.ddns.net:5060',
 	wsServers: ['wss://freeswitch.ddns.net:7443'],
-	authorizationUser: 'webcall1',
+	authorizationUser: 'webcall2',
 	password: '112233'
 });
 
