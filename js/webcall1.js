@@ -6,13 +6,20 @@ endButton.addEventListener("click", function () {
 	alert("Call Ended");
 }, false);
 
-var userAgent = new SIP.UA({
+var startButton = document.getElementById('startCall');
+startButton.addEventListener("click", function () {
+	session = userAgent.invite('sip:webcall2@freeswitch.ddns.net', options);
+	alert("Call Started");
+}, false);
+
+var userAgent = new SIP.UA ({
 	uri: 'webcall1@freeswitch.ddns.net:5060',
 	wsServers: ['wss://freeswitch.ddns.net:7443'],
 	authorizationUser: 'webcall1',
 	password: '112233'
 });
 
+<<<<<<< HEAD
 userAgent.on('invite', function (zinhteo) {
 	session = zinhteo;
 	session.accept({
@@ -25,6 +32,17 @@ userAgent.on('invite', function (zinhteo) {
 				remote: document.getElementById('remoteVideo'),
 				local:  document.getElementById('localVideo')
 			}
+=======
+var options = {
+	media: {
+		constraints: {
+			audio: true,
+			video: true
+		},
+		render: {
+			remote: document.getElementById('remoteVideo'),
+			local: document.getElementById('localVideo')
+>>>>>>> 16f14e8ca877ad012ac4dd57c52dfff0d6840238
 		}
-	});
-});
+	}
+};

@@ -81,7 +81,7 @@ function inviteSubmit(e) {
 	e.preventDefault();
     e.stopPropagation();
 
-	var uri = "3003@freeswitch.ddns.net";
+	var uri = elements.uauri.value;
 	elements.uauri.value = '';
 
 	var session = ua.invite(uri, {
@@ -158,7 +158,7 @@ elements.callbutton.addEventListener('click', inviteSubmit, false);
 console.log(ua);
 
 
-
+/*
 
 //==============function createNewSessionUI==============
 
@@ -176,6 +176,43 @@ console.log(ua);
 //     	remote: sessionUI.video
 //   	};
   
+<<<<<<< HEAD
+  	// sessionUI.displayName.textContent = displayName || uri.user;
+  	// elements.display.innerHTML = '<' + uri + '>';
+  	// session.renderHint();
+
+  	var options = {
+      media: {
+        constraints: {
+          audio: true,
+        //video: video
+        }
+      }
+    };
+
+    if (!session) {
+      /* TODO - Invite new session */
+      /* Don't forget to enable buttons */
+/*
+      session = sessionUI.session = ua.invite(uri, options);
+
+      setUpListeners(session);
+    } else if (session.accept && !session.startTime) { // Incoming, not connected
+      session.accept(options);
+    }
+
+    function setUpListeners(session) {
+    	session.on('accepted', function () {
+    		elements.callbutton.disabled = true;
+    		session.mediaHandler.render(session.renderHint);
+    });
+  	
+	}
+}
+// end function createNewSessionUI
+
+*/
+=======
 //   	// sessionUI.displayName.textContent = displayName || uri.user;
 //   	// elements.display.innerHTML = '<' + uri + '>';
 //   	// session.renderHint();
@@ -208,3 +245,4 @@ console.log(ua);
 // 	}
 // }
 // end function createNewSessionUI
+>>>>>>> cfc12f77a1fe3ef957d8679898bc32ef0b66bc87
