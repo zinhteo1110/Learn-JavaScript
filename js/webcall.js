@@ -1,8 +1,8 @@
 var elements = {
 	status: 			document.getElementById("ua-status"),
 	regisbutton: 		document.getElementById("ua-regis"),
-	callbutton: 		document.getElementById("call"),
-	endcallbutton:    	document.getElementById("endcall"),
+	callbutton: 		document.getElementById("startCall"),
+	endcallbutton:    	document.getElementById("endCall"),
 	result: 			document.getElementById("result"),
 	display:  			document.getElementById("displayname"), 
 	uauri:  			document.getElementById("ua-uri")
@@ -15,6 +15,7 @@ var config = {
 	uri: '',
 	wsServers: '',
 	userAgentString: 'SIP.js/0.7.0 BB',
+	//userAgentString: 'SIP.js/0.13.6',
 	traceSip: true,
 	register: false
 }
@@ -80,20 +81,28 @@ function inviteSubmit(e) {
 	e.preventDefault();
     e.stopPropagation();
 
-	var uri = elements.uauri.value;
+	var uri = "3003@freeswitch.ddns.net";
 	elements.uauri.value = '';
 
 	var session = ua.invite(uri, {
 		media: {
+		//sessionDescriptionHandlerOptions: {	
 			constraints: {
 				audio: true,
-				video: false
+				video: true
+			},
+			render: {
+				remote: document.getElementById('remoteVideo'),
+				local: document.getElementById('localVideo')
 			}
 		}
 	});
 
+<<<<<<< HEAD
 	//mediaHandler.render(session);
 	//session.mediaHandler.renderHint.remote;
+=======
+>>>>>>> 5a3bd4cee7ba60a6c1db72638ce833d687a9b66d
 
 	if (!uri) return;
 
@@ -103,6 +112,20 @@ function inviteSubmit(e) {
 	
 	console.log("xxxxxxxxxxxxx> session: "+session.on);
 	//console.log("======> session.on:"+session.on);
+
+	// session.on('trackAdded', function() {
+	// 	var pc = session.sessionDesscriptionHandler.peerConnection;
+	// 	var remoteStream = new MediaStream();
+	// 	pc.getReceivers().forEach(function(receiver) {
+	// 		remoteStream.addTrack(receiver.track);
+	// 	});
+	// 	console.log(" =====> thong in cua pc: "+pc);	//The trackAdded event is simply a helper, and does not pass any information.
+	// 	session.mediaHandler.render(session.renderHint);
+	// 	console.log(session.mediaHandler.render);
+	// });
+
+	console.log("=====> thong tin session remote : "+session.remoteIdentity.uri);
+
 
 	//createNewSessionUI(uri, session);
 
