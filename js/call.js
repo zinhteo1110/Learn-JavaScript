@@ -6,7 +6,7 @@ endButton.addEventListener("click", function () {
 	alert("Call Ended");
 }, false);
 
-var startButton = document.getElementById('endCall');
+var startButton = document.getElementById('startCall');
 startButton.addEventListener("click", function () {
 	session = userAgent.invite('webcall2@freeswitch.ddns.net', options);
 	alert("Call Started");
@@ -23,7 +23,7 @@ var options = {
 	media: {
 		constraints: {
 			audio: true,
-			video: true
+			video: false
 		},
 		render: {
 			remote: document.getElementById('remoteVideo'),

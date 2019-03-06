@@ -20,10 +20,10 @@ var config = {
 	register: false
 }
 
-config.authorizationUser = 'webcall2';
+config.authorizationUser = 'webcall';
 config.password = '112233';
-config.displayName = 'webcall2';
-config.uri = 'webcall2@freeswitch.ddns.net:5060';
+config.displayName = 'webcall';
+config.uri = 'webcall@freeswitch.ddns.net:5060';
 config.wsServers = 'wss://freeswitch.ddns.net:7443';
 
 var ua = new SIP.UA(config);
@@ -98,11 +98,9 @@ function inviteSubmit(e) {
 		}
 	});
 
-<<<<<<< HEAD
+
 	//mediaHandler.render(session);
 	//session.mediaHandler.renderHint.remote;
-=======
->>>>>>> 5a3bd4cee7ba60a6c1db72638ce833d687a9b66d
 
 	if (!uri) return;
 
@@ -141,6 +139,7 @@ function inviteSubmit(e) {
 			console.log(">>>>>>Day la session.bye!");
 			delete session;
 			result.innerHTML = "Ban vua su dung: session.bye!";
+			alert("Call Ended");
 		} else if (session.reject) { // Incoming
 			session.reject();
 			console.log(">>>>>>Day la session.reject!");
@@ -212,7 +211,7 @@ console.log(ua);
 // end function createNewSessionUI
 
 */
-=======
+
 //   	// sessionUI.displayName.textContent = displayName || uri.user;
 //   	// elements.display.innerHTML = '<' + uri + '>';
 //   	// session.renderHint();
@@ -245,4 +244,4 @@ console.log(ua);
 // 	}
 // }
 // end function createNewSessionUI
->>>>>>> cfc12f77a1fe3ef957d8679898bc32ef0b66bc87
+
