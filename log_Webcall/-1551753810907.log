@@ -1,0 +1,495 @@
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:42:36 GMT+0700 (Indochina Time) | sip.ua | configuration parameters after validation:
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:42:36 GMT+0700 (Indochina Time) | sip.ua | Â· viaHost: "rth73ldd2k8e.invalid"
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:42:36 GMT+0700 (Indochina Time) | sip.ua | Â· uri: sip:webcall@freeswitch.ddns.net:5060
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:42:36 GMT+0700 (Indochina Time) | sip.ua | Â· wsServers: [{"ws_uri":"wss://freeswitch.ddns.net:7443","sip_uri":"<sip:freeswitch.ddns.net:7443;transport=ws;lr>","weight":0,"status":0,"scheme":"WSS"}]
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:42:36 GMT+0700 (Indochina Time) | sip.ua | Â· password: NOT SHOWN
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:42:36 GMT+0700 (Indochina Time) | sip.ua | Â· registerExpires: 600
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:42:36 GMT+0700 (Indochina Time) | sip.ua | Â· register: false
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:42:36 GMT+0700 (Indochina Time) | sip.ua | Â· registrarServer: sip:freeswitch.ddns.net:5060
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:42:36 GMT+0700 (Indochina Time) | sip.ua | Â· wsServerMaxReconnection: 3
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:42:36 GMT+0700 (Indochina Time) | sip.ua | Â· wsServerReconnectionTimeout: 4
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:42:36 GMT+0700 (Indochina Time) | sip.ua | Â· connectionRecoveryMinInterval: 2
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:42:36 GMT+0700 (Indochina Time) | sip.ua | Â· connectionRecoveryMaxInterval: 30
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:42:36 GMT+0700 (Indochina Time) | sip.ua | Â· keepAliveInterval: 0
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:42:36 GMT+0700 (Indochina Time) | sip.ua | Â· extraSupported: []
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:42:36 GMT+0700 (Indochina Time) | sip.ua | Â· usePreloadedRoute: false
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:42:36 GMT+0700 (Indochina Time) | sip.ua | Â· userAgentString: "SIP.js/0.7.0 BB"
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:42:36 GMT+0700 (Indochina Time) | sip.ua | Â· iceCheckingTimeout: 5000
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:42:36 GMT+0700 (Indochina Time) | sip.ua | Â· noAnswerTimeout: 60000
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:42:36 GMT+0700 (Indochina Time) | sip.ua | Â· stunServers: ["stun:stun.l.google.com:19302"]
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:42:36 GMT+0700 (Indochina Time) | sip.ua | Â· turnServers: []
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:42:36 GMT+0700 (Indochina Time) | sip.ua | Â· traceSip: true
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:42:36 GMT+0700 (Indochina Time) | sip.ua | Â· hackViaTcp: false
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:42:36 GMT+0700 (Indochina Time) | sip.ua | Â· hackIpInContact: false
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:42:36 GMT+0700 (Indochina Time) | sip.ua | Â· hackWssInTransport: false
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:42:36 GMT+0700 (Indochina Time) | sip.ua | Â· hackAllowUnregisteredOptionTags: false
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:42:36 GMT+0700 (Indochina Time) | sip.ua | Â· contactTransport: "ws"
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:42:36 GMT+0700 (Indochina Time) | sip.ua | Â· forceRport: false
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:42:36 GMT+0700 (Indochina Time) | sip.ua | Â· autostart: true
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:42:36 GMT+0700 (Indochina Time) | sip.ua | Â· rel100: "none"
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:42:36 GMT+0700 (Indochina Time) | sip.ua | Â· replaces: "none"
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:42:36 GMT+0700 (Indochina Time) | sip.ua | Â· mediaHandlerFactory: function defaultFactory (session, options) {
+  return new MediaHandler(session, options);
+}
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:42:36 GMT+0700 (Indochina Time) | sip.ua | Â· authenticationFactory: undefined
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:42:36 GMT+0700 (Indochina Time) | sip.ua | Â· authorizationUser: "webcall"
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:42:36 GMT+0700 (Indochina Time) | sip.ua | Â· displayName: "webcall"
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:42:36 GMT+0700 (Indochina Time) | sip.ua | Â· instanceId: "35a8f9a1-ab3d-4b13-968c-87e48a03ff87"
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:42:36 GMT+0700 (Indochina Time) | sip.ua | Â· sipjsId: "tis7f"
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:42:36 GMT+0700 (Indochina Time) | sip.ua | Â· hostportParams: "freeswitch.ddns.net:5060"
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:42:36 GMT+0700 (Indochina Time) | sip.ua | Â· media: undefined
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:42:36 GMT+0700 (Indochina Time) | sip.ua | user requested startup...
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:42:36 GMT+0700 (Indochina Time) | sip.transport | connecting to WebSocket wss://freeswitch.ddns.net:7443
+webcall.js:133 UA {log: LoggerFactory, logger: Logger, cache: {…}, configuration: {…}, dialogs: {…}, …}
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:42:36 GMT+0700 (Indochina Time) | sip.transport | WebSocket wss://freeswitch.ddns.net:7443 connected
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:42:36 GMT+0700 (Indochina Time) | sip.ua | connection state set to 0
+webcall.js:35 =====> 1. Connected - (Unregistered)!
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:42:38 GMT+0700 (Indochina Time) | sip.transport | sending WebSocket message:
+
+REGISTER sip:freeswitch.ddns.net:5060 SIP/2.0
+Via: SIP/2.0/WSS rth73ldd2k8e.invalid;branch=z9hG4bK6346228
+Max-Forwards: 70
+To: "webcall" <sip:webcall@freeswitch.ddns.net:5060>
+From: "webcall" <sip:webcall@freeswitch.ddns.net:5060>;tag=qhmn7v1njt
+Call-ID: 7gct2c7od4o1scc32rb4f5
+CSeq: 81 REGISTER
+X-Foo: foo
+X-Bar: bar
+Contact: <sip:tvfu4uiu@rth73ldd2k8e.invalid;transport=ws>;reg-id=1;+sip.instance="<urn:uuid:35a8f9a1-ab3d-4b13-968c-87e48a03ff87>";expires=600
+Allow: ACK,CANCEL,INVITE,MESSAGE,BYE,OPTIONS,INFO,NOTIFY
+Supported: path, gruu, outbound
+User-Agent: SIP.js/0.7.0 BB
+Content-Length: 0
+
+
+
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:42:38 GMT+0700 (Indochina Time) | sip.transport | received WebSocket text message:
+
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/WSS rth73ldd2k8e.invalid;branch=z9hG4bK6346228;received=111.65.255.3;rport=64547
+From: "webcall" <sip:webcall@freeswitch.ddns.net:5060>;tag=qhmn7v1njt
+To: "webcall" <sip:webcall@freeswitch.ddns.net:5060>;tag=pmD4HgHQm28vH
+Call-ID: 7gct2c7od4o1scc32rb4f5
+CSeq: 81 REGISTER
+User-Agent: FreeSWITCH
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+WWW-Authenticate: Digest realm="freeswitch.ddns.net", nonce="6d697dd2-3ef0-11e9-a125-471f5fdc4eaf", algorithm=MD5, qop="auth"
+Content-Length: 0
+
+
+
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:42:38 GMT+0700 (Indochina Time) | sip.transport | sending WebSocket message:
+
+REGISTER sip:freeswitch.ddns.net:5060 SIP/2.0
+Via: SIP/2.0/WSS rth73ldd2k8e.invalid;branch=z9hG4bK4129998
+Max-Forwards: 70
+To: "webcall" <sip:webcall@freeswitch.ddns.net:5060>
+From: "webcall" <sip:webcall@freeswitch.ddns.net:5060>;tag=qhmn7v1njt
+Call-ID: 7gct2c7od4o1scc32rb4f5
+CSeq: 82 REGISTER
+Authorization: Digest algorithm=MD5, username="webcall", realm="freeswitch.ddns.net", nonce="6d697dd2-3ef0-11e9-a125-471f5fdc4eaf", uri="sip:freeswitch.ddns.net:5060", response="1d66549db1a361c3e505081ecd1ae1cb", qop=auth, cnonce="8q02716s14bp", nc=00000001
+X-Foo: foo
+X-Bar: bar
+Contact: <sip:tvfu4uiu@rth73ldd2k8e.invalid;transport=ws>;reg-id=1;+sip.instance="<urn:uuid:35a8f9a1-ab3d-4b13-968c-87e48a03ff87>";expires=600
+Allow: ACK,CANCEL,INVITE,MESSAGE,BYE,OPTIONS,INFO,NOTIFY
+Supported: path, gruu, outbound
+User-Agent: SIP.js/0.7.0 BB
+Content-Length: 0
+
+
+
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:42:38 GMT+0700 (Indochina Time) | sip.transport | received WebSocket text message:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS rth73ldd2k8e.invalid;branch=z9hG4bK4129998;received=111.65.255.3;rport=64547
+From: "webcall" <sip:webcall@freeswitch.ddns.net:5060>;tag=qhmn7v1njt
+To: "webcall" <sip:webcall@freeswitch.ddns.net:5060>;tag=QX6vKB2tHBZFD
+Call-ID: 7gct2c7od4o1scc32rb4f5
+CSeq: 82 REGISTER
+Contact: <sip:tvfu4uiu@rth73ldd2k8e.invalid;transport=ws>;expires=600
+Date: Tue, 05 Mar 2019 02:43:14 GMT
+User-Agent: FreeSWITCH
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+
+
+webcall.js:40  =====> 2. Connected - (Registered)!
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:43:09 GMT+0700 (Indochina Time) | sip.invitecontext.mediahandler | acquiring local media
+webcall.js:102 xxxxxxxxxxxxx> session: function(type, listener) {
+  var m;
+
+  if (!isFunction(listener))
+    throw TypeError('listener must be a function');
+
+  if (!this._events)
+    this._events = {};
+
+  // To avoid recursion in the case that type === "newListener"! Before
+  // adding it to the listeners, first emit "newListener".
+  if (this._events.newListener)
+    this.emit('newListener', type,
+              isFunction(listener.listener) ?
+              listener.listener : listener);
+
+  if (!this._events[type])
+    // Optimize the case of one listener. Don't need the extra array object.
+    this._events[type] = listener;
+  else if (isObject(this._events[type]))
+    // If we've already got an array, just append.
+    this._events[type].push(listener);
+  else
+    // Adding the second element, need to change to array.
+    this._events[type] = [this._events[type], listener];
+
+  // Check for listener leak
+  if (isObject(this._events[type]) && !this._events[type].warned) {
+    var m;
+    if (!isUndefined(this._maxListeners)) {
+      m = this._maxListeners;
+    } else {
+      m = EventEmitter.defaultMaxListeners;
+    }
+
+    if (m && m > 0 && this._events[type].length > m) {
+      this._events[type].warned = true;
+      console.error('(node) warning: possible EventEmitter memory ' +
+                    'leak detected. %d listeners added. ' +
+                    'Use emitter.setMaxListeners() to increase limit.',
+                    this._events[type].length);
+      if (typeof console.trace === 'function') {
+        // not supported in IE 10
+        console.trace();
+      }
+    }
+  }
+
+  return this;
+}
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:43:10 GMT+0700 (Indochina Time) | sip.invitecontext.mediahandler | acquired local media streams
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:43:10 GMT+0700 (Indochina Time) | sip.invitecontext.mediahandler | RTCIceGatheringState changed: gathering
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:43:10 GMT+0700 (Indochina Time) | sip.invitecontext.mediahandler | ICE candidate received: candidate:4105687023 1 udp 2113937151 192.168.168.134 41351 typ host generation 0 ufrag pweb network-cost 999
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:43:10 GMT+0700 (Indochina Time) | sip.invitecontext.mediahandler | ICE candidate received: candidate:842163049 1 udp 1677729535 111.65.255.3 11950 typ srflx raddr 192.168.168.134 rport 41351 generation 0 ufrag pweb network-cost 999
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:43:10 GMT+0700 (Indochina Time) | sip.invitecontext.mediahandler | RTCIceGatheringState changed: complete
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:43:10 GMT+0700 (Indochina Time) | sip.transport | sending WebSocket message:
+
+INVITE sip:3003@freeswitch.ddns.net SIP/2.0
+Via: SIP/2.0/WSS rth73ldd2k8e.invalid;branch=z9hG4bK4342028
+Max-Forwards: 70
+To: <sip:3003@freeswitch.ddns.net>
+From: "webcall" <sip:webcall@freeswitch.ddns.net:5060>;tag=da8vgrbj0n
+Call-ID: tis7fo63m9lab3553kbc
+CSeq: 2902 INVITE
+Contact: <sip:tvfu4uiu@rth73ldd2k8e.invalid;transport=ws;ob>
+Allow: ACK,CANCEL,INVITE,MESSAGE,BYE,OPTIONS,INFO,NOTIFY
+Content-Type: application/sdp
+Supported: outbound
+User-Agent: SIP.js/0.7.0 BB
+Content-Length: 1617
+
+v=0
+o=- 4343800935401796616 2 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=group:BUNDLE 0
+a=msid-semantic: WMS OX8hvC2rQ7255Lohyinzunw8kLSzn3HWzTwa
+m=audio 11950 UDP/TLS/RTP/SAVPF 111 103 104 9 0 8 106 105 13 110 112 113 126
+c=IN IP4 111.65.255.3
+a=rtcp:9 IN IP4 0.0.0.0
+a=candidate:4105687023 1 udp 2113937151 192.168.168.134 41351 typ host generation 0 network-cost 999
+a=candidate:842163049 1 udp 1677729535 111.65.255.3 11950 typ srflx raddr 192.168.168.134 rport 41351 generation 0 network-cost 999
+a=ice-ufrag:pweb
+a=ice-pwd:VL7KAe1SEfn4hKmKWSLfSjGf
+a=ice-options:trickle
+a=fingerprint:sha-256 2D:B0:2F:58:11:98:E0:54:4A:F1:62:91:11:4A:44:48:00:23:93:54:11:13:86:34:05:7A:55:CF:09:28:E7:3C
+a=setup:actpass
+a=mid:0
+a=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level
+a=extmap:9 urn:ietf:params:rtp-hdrext:sdes:mid
+a=sendrecv
+a=msid:OX8hvC2rQ7255Lohyinzunw8kLSzn3HWzTwa 92221183-054e-4e93-854c-22912db1a00e
+a=rtcp-mux
+a=rtpmap:111 opus/48000/2
+a=rtcp-fb:111 transport-cc
+a=fmtp:111 minptime=10;useinbandfec=1
+a=rtpmap:103 ISAC/16000
+a=rtpmap:104 ISAC/32000
+a=rtpmap:9 G722/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:106 CN/32000
+a=rtpmap:105 CN/16000
+a=rtpmap:13 CN/8000
+a=rtpmap:110 telephone-event/48000
+a=rtpmap:112 telephone-event/32000
+a=rtpmap:113 telephone-event/16000
+a=rtpmap:126 telephone-event/8000
+a=ssrc:1120379917 cname:4U31nZrUmLZrnOSW
+a=ssrc:1120379917 msid:OX8hvC2rQ7255Lohyinzunw8kLSzn3HWzTwa 92221183-054e-4e93-854c-22912db1a00e
+a=ssrc:1120379917 mslabel:OX8hvC2rQ7255Lohyinzunw8kLSzn3HWzTwa
+a=ssrc:1120379917 label:92221183-054e-4e93-854c-22912db1a00e
+
+
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:43:10 GMT+0700 (Indochina Time) | sip.transport | received WebSocket text message:
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/WSS rth73ldd2k8e.invalid;branch=z9hG4bK4342028;received=111.65.255.3;rport=64547
+From: "webcall" <sip:webcall@freeswitch.ddns.net:5060>;tag=da8vgrbj0n
+To: <sip:3003@freeswitch.ddns.net>
+Call-ID: tis7fo63m9lab3553kbc
+CSeq: 2902 INVITE
+User-Agent: FreeSWITCH
+Content-Length: 0
+
+
+
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:43:10 GMT+0700 (Indochina Time) | sip.transport | received WebSocket text message:
+
+SIP/2.0 407 Proxy Authentication Required
+Via: SIP/2.0/WSS rth73ldd2k8e.invalid;branch=z9hG4bK4342028;received=111.65.255.3;rport=64547
+From: "webcall" <sip:webcall@freeswitch.ddns.net:5060>;tag=da8vgrbj0n
+To: <sip:3003@freeswitch.ddns.net>;tag=r6ZNN6jyemN2r
+Call-ID: tis7fo63m9lab3553kbc
+CSeq: 2902 INVITE
+User-Agent: FreeSWITCH
+Accept: application/sdp
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Allow-Events: talk, hold, conference, presence, as-feature-event, dialog, line-seize, call-info, sla, include-session-description, presence.winfo, message-summary, refer
+Proxy-Authenticate: Digest realm="freeswitch.ddns.net", nonce="80a50b5a-3ef0-11e9-a127-471f5fdc4eaf", algorithm=MD5, qop="auth"
+Content-Length: 0
+
+
+
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:43:10 GMT+0700 (Indochina Time) | sip.transport | sending WebSocket message:
+
+ACK sip:3003@freeswitch.ddns.net SIP/2.0
+Via: SIP/2.0/WSS rth73ldd2k8e.invalid;branch=z9hG4bK4342028
+To: <sip:3003@freeswitch.ddns.net>;tag=r6ZNN6jyemN2r
+From: "webcall" <sip:webcall@freeswitch.ddns.net:5060>;tag=da8vgrbj0n
+Call-ID: tis7fo63m9lab3553kbc
+Content-Length: 0
+CSeq: 2902 ACK
+
+
+
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:43:10 GMT+0700 (Indochina Time) | sip.transport | sending WebSocket message:
+
+INVITE sip:3003@freeswitch.ddns.net SIP/2.0
+Via: SIP/2.0/WSS rth73ldd2k8e.invalid;branch=z9hG4bK9621010
+Max-Forwards: 70
+To: <sip:3003@freeswitch.ddns.net>
+From: "webcall" <sip:webcall@freeswitch.ddns.net:5060>;tag=da8vgrbj0n
+Call-ID: tis7fo63m9lab3553kbc
+CSeq: 2903 INVITE
+Proxy-Authorization: Digest algorithm=MD5, username="webcall", realm="freeswitch.ddns.net", nonce="80a50b5a-3ef0-11e9-a127-471f5fdc4eaf", uri="sip:3003@freeswitch.ddns.net", response="f09793a478543ab8facf6541add1c6d6", qop=auth, cnonce="cis3hcuk5pqj", nc=00000001
+Contact: <sip:tvfu4uiu@rth73ldd2k8e.invalid;transport=ws;ob>
+Allow: ACK,CANCEL,INVITE,MESSAGE,BYE,OPTIONS,INFO,NOTIFY
+Content-Type: application/sdp
+Supported: outbound
+User-Agent: SIP.js/0.7.0 BB
+Content-Length: 1617
+
+v=0
+o=- 4343800935401796616 2 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=group:BUNDLE 0
+a=msid-semantic: WMS OX8hvC2rQ7255Lohyinzunw8kLSzn3HWzTwa
+m=audio 11950 UDP/TLS/RTP/SAVPF 111 103 104 9 0 8 106 105 13 110 112 113 126
+c=IN IP4 111.65.255.3
+a=rtcp:9 IN IP4 0.0.0.0
+a=candidate:4105687023 1 udp 2113937151 192.168.168.134 41351 typ host generation 0 network-cost 999
+a=candidate:842163049 1 udp 1677729535 111.65.255.3 11950 typ srflx raddr 192.168.168.134 rport 41351 generation 0 network-cost 999
+a=ice-ufrag:pweb
+a=ice-pwd:VL7KAe1SEfn4hKmKWSLfSjGf
+a=ice-options:trickle
+a=fingerprint:sha-256 2D:B0:2F:58:11:98:E0:54:4A:F1:62:91:11:4A:44:48:00:23:93:54:11:13:86:34:05:7A:55:CF:09:28:E7:3C
+a=setup:actpass
+a=mid:0
+a=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level
+a=extmap:9 urn:ietf:params:rtp-hdrext:sdes:mid
+a=sendrecv
+a=msid:OX8hvC2rQ7255Lohyinzunw8kLSzn3HWzTwa 92221183-054e-4e93-854c-22912db1a00e
+a=rtcp-mux
+a=rtpmap:111 opus/48000/2
+a=rtcp-fb:111 transport-cc
+a=fmtp:111 minptime=10;useinbandfec=1
+a=rtpmap:103 ISAC/16000
+a=rtpmap:104 ISAC/32000
+a=rtpmap:9 G722/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:106 CN/32000
+a=rtpmap:105 CN/16000
+a=rtpmap:13 CN/8000
+a=rtpmap:110 telephone-event/48000
+a=rtpmap:112 telephone-event/32000
+a=rtpmap:113 telephone-event/16000
+a=rtpmap:126 telephone-event/8000
+a=ssrc:1120379917 cname:4U31nZrUmLZrnOSW
+a=ssrc:1120379917 msid:OX8hvC2rQ7255Lohyinzunw8kLSzn3HWzTwa 92221183-054e-4e93-854c-22912db1a00e
+a=ssrc:1120379917 mslabel:OX8hvC2rQ7255Lohyinzunw8kLSzn3HWzTwa
+a=ssrc:1120379917 label:92221183-054e-4e93-854c-22912db1a00e
+
+
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:43:10 GMT+0700 (Indochina Time) | sip.transaction.ict | Timer D expired for INVITE client transaction z9hG4bK4342028
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:43:10 GMT+0700 (Indochina Time) | sip.transport | received WebSocket text message:
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/WSS rth73ldd2k8e.invalid;branch=z9hG4bK9621010;received=111.65.255.3;rport=64547
+From: "webcall" <sip:webcall@freeswitch.ddns.net:5060>;tag=da8vgrbj0n
+To: <sip:3003@freeswitch.ddns.net>
+Call-ID: tis7fo63m9lab3553kbc
+CSeq: 2903 INVITE
+User-Agent: FreeSWITCH
+Content-Length: 0
+
+
+
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:43:11 GMT+0700 (Indochina Time) | sip.transport | received WebSocket text message:
+
+SIP/2.0 183 Session Progress
+Via: SIP/2.0/WSS rth73ldd2k8e.invalid;branch=z9hG4bK9621010;received=111.65.255.3;rport=64547
+From: "webcall" <sip:webcall@freeswitch.ddns.net:5060>;tag=da8vgrbj0n
+To: <sip:3003@freeswitch.ddns.net>;tag=SFSeQ131BXBNm
+Call-ID: tis7fo63m9lab3553kbc
+CSeq: 2903 INVITE
+Contact: <sip:3003@111.65.255.10:5060;transport=udp>
+User-Agent: FreeSWITCH
+Accept: application/sdp
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Allow-Events: talk, hold, conference, presence, as-feature-event, dialog, line-seize, call-info, sla, include-session-description, presence.winfo, message-summary, refer
+Content-Type: application/sdp
+Content-Disposition: session
+Content-Length: 864
+Remote-Party-ID: "3003" <sip:3003@freeswitch.ddns.net>;party=calling;privacy=off;screen=no
+
+v=0
+o=FreeSWITCH 1551734819 1551734820 IN IP4 111.65.255.10
+s=FreeSWITCH
+c=IN IP4 111.65.255.10
+t=0 0
+a=msid-semantic: WMS lfUutq6pchzratJQxHZdn7Xe27dW2vKe
+m=audio 19008 UDP/TLS/RTP/SAVPF 9 126 13
+a=rtpmap:9 G722/8000
+a=rtpmap:126 telephone-event/8000
+a=rtpmap:13 CN/8000
+a=ptime:20
+a=fingerprint:sha-256 23:E7:EE:D9:75:90:5D:55:7D:AE:EB:71:58:28:3B:C1:F0:B3:FB:BC:F9:BF:84:92:37:B0:FD:4E:B1:0F:77:BB
+a=setup:active
+a=rtcp-mux
+a=rtcp:19008 IN IP4 111.65.255.10
+a=ice-ufrag:b8kp58tY6xLYTl2k
+a=ice-pwd:Fr5gM5TeuNHdhQkiPvyLtRAp
+a=candidate:8885911423 1 udp 659136 111.65.255.10 19008 typ host generation 0
+a=end-of-candidates
+a=ssrc:2558633332 cname:BuyUKv9MCz4CTDjh
+a=ssrc:2558633332 msid:lfUutq6pchzratJQxHZdn7Xe27dW2vKe a0
+a=ssrc:2558633332 mslabel:lfUutq6pchzratJQxHZdn7Xe27dW2vKe
+a=ssrc:2558633332 label:lfUutq6pchzratJQxHZdn7Xe27dW2vKea0
+
+
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:43:11 GMT+0700 (Indochina Time) | sip.dialog | new UAC dialog created with status EARLY
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:43:16 GMT+0700 (Indochina Time) | sip.transport | received WebSocket text message:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS rth73ldd2k8e.invalid;branch=z9hG4bK9621010;received=111.65.255.3;rport=64547
+From: "webcall" <sip:webcall@freeswitch.ddns.net:5060>;tag=da8vgrbj0n
+To: <sip:3003@freeswitch.ddns.net>;tag=SFSeQ131BXBNm
+Call-ID: tis7fo63m9lab3553kbc
+CSeq: 2903 INVITE
+Contact: <sip:3003@111.65.255.10:5060;transport=udp>
+User-Agent: FreeSWITCH
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Allow-Events: talk, hold, conference, presence, as-feature-event, dialog, line-seize, call-info, sla, include-session-description, presence.winfo, message-summary, refer
+Content-Type: application/sdp
+Content-Disposition: session
+Content-Length: 864
+Remote-Party-ID: "3003" <sip:3003@freeswitch.ddns.net>;party=calling;privacy=off;screen=no
+
+v=0
+o=FreeSWITCH 1551734819 1551734820 IN IP4 111.65.255.10
+s=FreeSWITCH
+c=IN IP4 111.65.255.10
+t=0 0
+a=msid-semantic: WMS lfUutq6pchzratJQxHZdn7Xe27dW2vKe
+m=audio 19008 UDP/TLS/RTP/SAVPF 9 126 13
+a=rtpmap:9 G722/8000
+a=rtpmap:126 telephone-event/8000
+a=rtpmap:13 CN/8000
+a=ptime:20
+a=fingerprint:sha-256 23:E7:EE:D9:75:90:5D:55:7D:AE:EB:71:58:28:3B:C1:F0:B3:FB:BC:F9:BF:84:92:37:B0:FD:4E:B1:0F:77:BB
+a=setup:active
+a=rtcp-mux
+a=rtcp:19008 IN IP4 111.65.255.10
+a=ice-ufrag:b8kp58tY6xLYTl2k
+a=ice-pwd:Fr5gM5TeuNHdhQkiPvyLtRAp
+a=candidate:8885911423 1 udp 659136 111.65.255.10 19008 typ host generation 0
+a=end-of-candidates
+a=ssrc:2558633332 cname:BuyUKv9MCz4CTDjh
+a=ssrc:2558633332 msid:lfUutq6pchzratJQxHZdn7Xe27dW2vKe a0
+a=ssrc:2558633332 mslabel:lfUutq6pchzratJQxHZdn7Xe27dW2vKe
+a=ssrc:2558633332 label:lfUutq6pchzratJQxHZdn7Xe27dW2vKea0
+
+
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:43:16 GMT+0700 (Indochina Time) | sip.dialog | dialog tis7fo63m9lab3553kbcda8vgrbj0nSFSeQ131BXBNm  changed to CONFIRMED state
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:43:16 GMT+0700 (Indochina Time) | sip.invitecontext.mediahandler | stream added: lfUutq6pchzratJQxHZdn7Xe27dW2vKe
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:43:16 GMT+0700 (Indochina Time) | sip.transport | sending WebSocket message:
+
+ACK sip:3003@111.65.255.10:5060;transport=udp SIP/2.0
+Via: SIP/2.0/WSS rth73ldd2k8e.invalid;branch=z9hG4bK8154726
+Max-Forwards: 70
+To: <sip:3003@freeswitch.ddns.net>;tag=SFSeQ131BXBNm
+From: "webcall" <sip:webcall@freeswitch.ddns.net:5060>;tag=da8vgrbj0n
+Call-ID: tis7fo63m9lab3553kbc
+CSeq: 2903 ACK
+Supported: outbound
+User-Agent: SIP.js/0.7.0 BB
+Content-Length: 0
+
+
+
+webcall.js:110 ===> Thong tin session neu co ben trong function endcallSubmit:[object Object]
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:43:19 GMT+0700 (Indochina Time) | sip.inviteclientcontext | terminating Session
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:43:19 GMT+0700 (Indochina Time) | sip.transport | sending WebSocket message:
+
+BYE sip:3003@111.65.255.10:5060;transport=udp SIP/2.0
+Via: SIP/2.0/WSS rth73ldd2k8e.invalid;branch=z9hG4bK7711219
+Max-Forwards: 70
+To: <sip:3003@freeswitch.ddns.net>;tag=SFSeQ131BXBNm
+From: "webcall" <sip:webcall@freeswitch.ddns.net:5060>;tag=da8vgrbj0n
+Call-ID: tis7fo63m9lab3553kbc
+CSeq: 2904 BYE
+Supported: outbound
+User-Agent: SIP.js/0.7.0 BB
+Content-Length: 0
+
+
+
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:43:19 GMT+0700 (Indochina Time) | sip.inviteclientcontext | closing INVITE session tis7fo63m9lab3553kbcvb2p94rmfh
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:43:19 GMT+0700 (Indochina Time) | sip.invitecontext.mediahandler | closing PeerConnection
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:43:19 GMT+0700 (Indochina Time) | sip.dialog | dialog tis7fo63m9lab3553kbcda8vgrbj0nSFSeQ131BXBNm deleted
+webcall.js:116 >>>>>>Day la session.bye!
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:43:19 GMT+0700 (Indochina Time) | sip.transport | received WebSocket text message:
+
+SIP/2.0 200 OK
+Via: SIP/2.0/WSS rth73ldd2k8e.invalid;branch=z9hG4bK7711219;received=111.65.255.3;rport=64547
+From: "webcall" <sip:webcall@freeswitch.ddns.net:5060>;tag=da8vgrbj0n
+To: <sip:3003@freeswitch.ddns.net>;tag=SFSeQ131BXBNm
+Call-ID: tis7fo63m9lab3553kbc
+CSeq: 2904 BYE
+User-Agent: FreeSWITCH
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+Supported: timer, path, replaces
+Content-Length: 0
+
+
+
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:43:21 GMT+0700 (Indochina Time) | sip.invitecontext.mediahandler | RTCIceChecking Timeout Triggered after 5000 milliseconds
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:43:42 GMT+0700 (Indochina Time) | sip.transaction.ict | Timer B expired for INVITE client transaction z9hG4bK9621010
+sip-0.7.3.js:2884 Tue Mar 05 2019 09:43:48 GMT+0700 (Indochina Time) | sip.transaction.ict | Timer M expired for INVITE client transaction z9hG4bK9621010

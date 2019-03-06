@@ -25,15 +25,19 @@
 		</div>
 		<label>SIP URI:<input type="text" id="ua-uri" class="input" placeholder="ex: haidn4@freeswitch.ddns.net"/></label>
 		<div id="area-2"> 
-			<button id="call" class="button">Call</button>	
-			<button id="endcall" class="button">End Call</button>
+			<button id="startCall" class="button">Start Call</button>	
+			<button id="endCall" class="button">End Call</button>
+			<br>
+			<video id="remoteVideo" muted="muted" width="128px" height="96px"></video>
 		</div>
 		<div>
 			<p id="displayname">Callee</p>
+
 			<p id="result">Result:</p>
 		</div>
 	</div><!--end div container -->
 	<script src="../js/sip-0.7.3.js"></script>
+	<!--script src="../js/sip-0.13.6.js"></script>-->
 	<script src="../js/webcall.js"></script>
 	<!--script src="../js/https_redirect.js"></script>-->
 </body>

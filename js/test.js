@@ -609,6 +609,16 @@ document.write("<br> Nhiet do trung binh trong tuan nay la: "+thisweek.average()
 // ==> 4.0 How to Modify Attributes, Classes, and Styles in the DOM.
 
 
+// ==> tinh lai bao gia
+var total = 297882900;
+var x1 = 8788500;
+var x2 = 43795500;
+
+var newcost = total -(x1+x2);
+var tax = newcost*(0.1);
+var newtotal = newcost + tax;
+
+console.log(newtotal);
 
 
 
