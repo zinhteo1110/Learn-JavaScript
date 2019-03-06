@@ -81,7 +81,7 @@ function inviteSubmit(e) {
 	e.preventDefault();
     e.stopPropagation();
 
-	var uri = "3003@freeswitch.ddns.net";
+	var uri = elements.uauri.value;
 	elements.uauri.value = '';
 
 	var session = ua.invite(uri, {
@@ -153,7 +153,7 @@ elements.callbutton.addEventListener('click', inviteSubmit, false);
 console.log(ua);
 
 
-
+/*
 
 //==============function createNewSessionUI==============
 
@@ -187,6 +187,7 @@ function createNewSessionUI(uri, session) {
     if (!session) {
       /* TODO - Invite new session */
       /* Don't forget to enable buttons */
+/*
       session = sessionUI.session = ua.invite(uri, options);
 
       setUpListeners(session);
@@ -203,3 +204,5 @@ function createNewSessionUI(uri, session) {
 	}
 }
 // end function createNewSessionUI
+
+*/
