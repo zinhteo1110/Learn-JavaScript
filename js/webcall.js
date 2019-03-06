@@ -98,7 +98,10 @@ function inviteSubmit(e) {
 		}
 	});
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8f20c14275913e07f8eba0561cce57aa75dd6147
 	//mediaHandler.render(session);
 	//session.mediaHandler.renderHint.remote;
 
