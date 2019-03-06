@@ -57,6 +57,13 @@ function Dancer(name, sex) {
 }
 
 function getDancers(males, famales) {
+<<<<<<< HEAD
+	
+}
+
+
+
+=======
 	var names = read("contact.txt").split("\n");
 	for (var i = 0; i < names.length; ++i) {
 		names[i] = names[i].trim();
@@ -95,6 +102,7 @@ if (!femaleDancers.empty()) {
 if (!maleDancers.empty()) {
 	document.write(maleDancers.front().name + " is waitting to dance.");
 }
+>>>>>>> 0c4f7fed8716dfdfd89c551272b8f631ed20ee36
 
 
 
