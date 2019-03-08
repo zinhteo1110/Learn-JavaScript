@@ -49,7 +49,8 @@ ua.on('unregistered', function () {
 });
 
 // Accept an inbound (User Agent Server) Session
-ua.on('invite', function (session) {
+ua.on('invite', function (zinhteo) {
+    session = zinhteo;
     session.accept({
     	media: {
     		constraints: {
@@ -62,6 +63,12 @@ ua.on('invite', function (session) {
     		}
     	}
     });
+
+    //click to end call.
+    elements.endcallbutton.addEventListener('click', function () {
+    	session.bye();
+    	alert("Call Ended");
+    }, false);
 
 });
 

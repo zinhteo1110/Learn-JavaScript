@@ -1,0 +1,87 @@
+#container {
+  max-width: 70%;
+  margin: 10px auto;
+  padding: 10px auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.button-group-1 {
+  margin: 10px;
+  padding: 10px 10px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 2px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);  
+  border: none;
+  color: white;
+  /*display: inline-block;*/
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  width: 150px;
+  height: 48px;
+}
+
+#area-11 {
+  display: inline-block; 
+  display: flex;
+  flex-direction: row;
+   max-width: 30%;
+}
+
+#area-12 {
+  display: inline-block;  
+   display: flex;
+  flex-direction: row;
+     max-width: 30%;
+}
+
+#area-13 {
+  display: inline-block;  
+ display: flex;
+  flex-direction: row;
+    max-width: 30%;
+}
+
+#btn1 {
+    background-color: #4CAF50;
+    display: flex;
+    flex-direction: row;
+ /*   display: inline-block;*/
+}
+
+#btn2 {
+  background-color: #ff3333;
+   display: flex;
+    flex-direction: row;
+  /*display: inline-block;*/
+}
+
+#btn3 {
+    background-color: #0066ff;
+     display: flex;
+    flex-direction: row;
+ /*   display: inline-block;*/
+}
+
+#btn {
+  margin: 10px;
+  padding: 10px 10px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 2px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);  
+  border: none;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  width: 150px;
+  height: 48px;
+}
+
+#group1 {
+  padding: 20px;
+   display: flex;
+    flex-direction: row;
+}
